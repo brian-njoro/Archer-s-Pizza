@@ -1,0 +1,15 @@
+body {
+    background-image: url("images/pizzabg2.jpg");
+}
+
+.titles {
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    color: goldenrod;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    
+}
