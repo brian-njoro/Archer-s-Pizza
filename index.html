@@ -27,16 +27,42 @@
       <div id="menu">
         <p> CUSTOMIZE YOUR DESIRED PIZZA.</p>
         <br>
-        <h3>Kindly select pizza size</h3>
+        <h3 id="sizeHeading">select pizza size</h3>
         <div class="pizzaSize">
           <div id="small">
-            <h4>Small </h4>
+            <h6>
+              Small <input type="checkbox" id="cbSmall">
+              </h6>
           </div>
-          <div id="medium"></div>
-          <div id="large"></div>
-          <div id="familySize"></div>
+          <div id="medium">
+            <h6>
+              medium <input type="checkbox" id="cbMedium">
+            </h6>
+          </div>
+          <div id="large">
+            <h6>
+              large <input type="checkbox" id="cbLarge">
+            </h6>
+          </div>
+          <div id="familySize">
+            <h6>
+              family size (Deluxe) <input type="checkbox" id="cbFamilySize">
+            </h6>
+          </div>
         </div>
-        <h4></h4>
+        <h3 id="crustHeading">select pizza crust.</h3>
+        <div class="pizzaCrust">
+          <div id="thinCrust">
+            <h6>
+              thin <input type="checkbox" id="cbThin">
+            </h6>
+          </div>
+          <div id="fullCrust">
+            <h6>
+              full crust (Thick) <input type="checkbox" id="cbThick">
+            </h6>
+          </div>
+        </div>
       </div>
     </body>
 </html>
