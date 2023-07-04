@@ -1,5 +1,6 @@
 body {
-    background-image: url("images/pizzabw2.webp")
+    background-image: url("images/pizzabw2.webp");
+    
 }
 
 .titles {
@@ -13,4 +14,7 @@ h1 {
     font-weight: bolder;
     
 }
+ h3,h4,h5,h6,p {
+    color: azure;
+ }
 
