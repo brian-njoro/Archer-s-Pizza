@@ -19,7 +19,25 @@ h1 {
  }
 
  #sizeHeading {
+   color: chartreuse;
     font-weight: bold;
     text-decoration: underline;
  }
 
+ #crustHeading {
+   color: chartreuse;
+    font-weight: bold;
+    text-decoration: underline;
+ }
+
+ #pizzaTypeHeading {
+   color: chartreuse;
+    font-weight: bold;
+    text-decoration: underline;
+ }
+
+ #toppingsHeading {
+   color: chartreuse;
+   font-weight: bold;
+   text-decoration: underline;
+ }

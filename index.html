@@ -14,7 +14,7 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -27,29 +27,30 @@
       <div id="menu">
         <p> CUSTOMIZE YOUR DESIRED PIZZA.</p>
         <br>
-        <h3 id="sizeHeading">select pizza size</h3>
+        <h3 id="sizeHeading">select pizza size.</h3>
         <div class="pizzaSize">
           <div id="small">
             <h6>
-              Small <input type="checkbox" id="cbSmall">
+              Small @ Kshs 550 <input type="checkbox" id="cbSmall">
               </h6>
           </div>
           <div id="medium">
             <h6>
-              medium <input type="checkbox" id="cbMedium">
+              medium @ Kshs 750<input type="checkbox" id="cbMedium">
             </h6>
           </div>
           <div id="large">
             <h6>
-              large <input type="checkbox" id="cbLarge">
+              large @ Kshs 900 <input type="checkbox" id="cbLarge">
             </h6>
           </div>
           <div id="familySize">
             <h6>
-              family size (Deluxe) <input type="checkbox" id="cbFamilySize">
+              family size (Deluxe) @ Kshs 1200 <input type="checkbox" id="cbFamilySize">
             </h6>
           </div>
         </div>
+        <br>
         <h3 id="crustHeading">select pizza crust.</h3>
         <div class="pizzaCrust">
           <div id="thinCrust">
@@ -63,6 +64,89 @@
             </h6>
           </div>
         </div>
+
+        <div class="pizzaType">
+          <h3 id="pizzaTypeHeading">Select pizza type.</h3>
+          <div id="pepperoniPizza">
+            <h6>
+              Pepperoni Pizza <input type="checkbox" id="PepperoniPizzaCb">
+              <ul>
+                <li>Pizza sauce</li>
+                <li>Grated Mozarella Cheese</li>
+                <li>Pepperoni slices</li>
+                <li>Sausage</li>
+              </ul>
+            </h6>
+          </div>
+          <div id="Hawaiian">
+            <h6>
+              Hawaiian <input type="checkbox" id="hawaiianCb">
+              <ul>
+                <li>pizza Sauce</li>
+                <li>cheese</li>
+                <li>cooked ham</li>
+                <li>pineapple slices</li>
+              </ul>
+            </h6>
+          </div>
+          <div id="chickenPeri">
+            <h6>
+              Chicken peri-peri <input type="checkbox" id="chickenPeriCb">
+              <ul>
+                <li>Roasted Spicy Chicken strips</li>
+                <li>chillis</li>
+                <li>pizza sauce</li>
+                <li>pesto</li>
+                <li>garlic</li>
+              </ul>
+            </h6>
+          </div>
+          <div id="chickenTikka">
+            <h6>
+              Chicken Tikka <input type="checkbox" id="tikkaCb">
+              <ul>
+                <li>Pizza sauce</li>
+                <li>buffalo sauce (EXTRA HOT!)</li>
+                <li>chicken strips (HOT!)</li>
+                <li>chillis</li>
+                <li>Garlic</li>
+                <li>Gorgonzola cheese</li>
+                <li>pesto</li>
+              </ul>
+            </h6>
+          </div>
+          <div id="veggie">
+            <h6>
+              Veggie Deluxe <input type="checkbox" id="veggieCb">
+              <ul>
+                <li>Pizza sauce</li>
+                <li>Slices tomatoes</li>
+                <li>sauteed peppers</li>
+                <li>oninions</li>
+                <li>sauteed mushrooms</li>
+              </ul>
+            </h6>
+          </div>
+        </div>
+        <div class="extraToppings">
+          <h3 id="toppingsHeading">Select preferred extra pizza Toppings (OPTIONAL)</h3>
+          <h6>
+            <ol>
+              <li>bacon @ Kshs 70 <input type="checkbox" id="baconCb"> </li>
+              <li>Pepperoni @ Kshs 80 <input type="checkbox" id="pepperoniCb"></li>
+              <li>Sausage @ Kshs 60 <input type="checkbox" id="sausage"></li>
+              <li>Black olives @ Kshs 40<input type="checkbox" id="olivesCb"></li>
+              <li>Bell peppers @ Kshs 40<input type="checkbox" id="bellPeppersCb"></li>
+              <li>Extra Cheese @ Kshs 80<input type="checkbox" id="cheeseCb"></li>
+            </ol>
+          </h6>
+        </div>
+        <div class="amount">
+          <h3>Number of pizzas required <input type="number" id="quantity" name="quantity" min="1" max="30"></h3>
+        </div>
+      </div>
+
+      <div id="services">
       </div>
     </body>
 </html>
