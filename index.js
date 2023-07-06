@@ -55,16 +55,29 @@ thickCheckbox.addEventListener(`click`,function() {
     console.log(`total price:`, pizzaTotal)
 })
 
+//Add prices for extra toppings
+
+//bacon
+const baconCheckbox = document.getElementById(`baconCb`)
+const baconPrice = 90
+baconCheckbox.addEventListener(`click`,function() {
+    if (baconCheckbox.checked) {
+        //checkbox is checked, add 90 to Total price
+        pizzaTotal += baconPrice
+    }
+    console.log(`total price:`, pizzaTotal)
+})
+
+//
+
+//get number of pizzas ordered by user
+function getValue() {
+    const input = document.getElementById("quantity");
+    const pizzaTally = input.value;
+    console.log(pizzaTally);
+}
 //place order button
 const placeOrder = document.getElementById(`placeOrder`)
 placeOrder.addEventListener(`click`, function() {
     alert(`Your order has successfully been placed`)
 })
-
-// get number of pizzas required
-function getValue() {
-    const input = document.getElementById("quantity");
-    const pizzaTally = input.value;
-    console.log(quantityValue);
-  }
-  
