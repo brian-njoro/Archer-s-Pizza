@@ -79,12 +79,46 @@ pepperoniCheckbox.addEventListener(`click`,function() {
     console.log(`total price:`, pizzaTotal)
 })
 
+//sausage
+const sausageCheckbox = document.getElementById(`sausage`)
+const sausagePrice = 60
+sausageCheckbox.addEventListener(`click`,function() {
+    if (sausageCheckbox.checked) {
+        //checkbox is checked, add sausage topping Price to Total price
+        pizzaTotal += sausagePrice
+    }
+    console.log(`total price:`, pizzaTotal)
+})
+
+//black olives
+const olivesCheckbox = document.getElementById(`olivesCb`)
+const olivesPrice = 80
+pepperoniCheckbox.addEventListener(`click`,function() {
+    if (olivesCheckbox.checked) {
+        //checkbox is checked, add black olives topping Price to Total price
+        pizzaTotal += olivesPrice
+    }
+    console.log(`total price:`, pizzaTotal)
+})
+
+//bell peppers
+const peppersCheckbox = document.getElementById(`peppersCb`)
+const peppersPrice = 50
+peppersCheckbox.addEventListener(`click`,function() {
+    if (peppersCheckbox.checked) {
+        //checkbox is checked, add bell peppers topping Price to Total price
+        pizzaTotal += peppersPrice
+    }
+    console.log(`total price:`, pizzaTotal)
+})
+
 //get number of pizzas ordered by user
 function getValue() {
     const input = document.getElementById("quantity");
     const pizzaTally = input.value;
     console.log(pizzaTally);
 }
+
 //place order button
 const placeOrder = document.getElementById(`placeOrder`)
 placeOrder.addEventListener(`click`, function() {
