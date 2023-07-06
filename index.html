@@ -15,7 +15,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="titles">
@@ -142,7 +142,7 @@
           </h6>
         </div>
         <div class="amount">
-          <h3>Number of pizzas required <input type="number" id="quantity" name="quantity" min="1" max="30"></h3>
+          <h3>Number of pizzas.<input type="number" id="quantity" name="quantity" min="1" max="30"></h3>
         </div>
       </div>
 
@@ -153,8 +153,27 @@
           door delivery <input type="checkbox">
         </h6>
         <p>Should you wish for your order door delivered, kindly fill in the required details below</p>
-        <h6>Email address <input type="email" id="email" name="email" placeholder="enter your email adress"> </h6>
-        <h6>Phone number <input type="text" name="phone" id="phone"></h6> 
+        <div class="form">
+          <form action="index.js" name="form" id="form"></form>
+          <label for="name"><h6>Enter your first name</h6></label>
+          <input type="text" id="firstname" placeholder="first name">
+          <label for="name"><h6>Enter your last name</h6></label>
+          <input type="text" id="lastname" placeholder="last name">
+          <label for="email"><h6>Enter your email</h6></label>
+          <input type="email" id="email" placeholder="email">
+          <label for="number"><h6>Enter your phone number</h6></label>
+          <input type="number" id="number" placeholder="number">
+          <label for="address"><h6>Enter your address</h6></label>
+          <input type="text" id="address" placeholder="address">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
+      <br>
+      <div id="contact">
+        <h3>For any enquiries concerning your order or any other services, feel free to reach us through any of the following channels.</h3>
+        <a href="mailto:archerspizza77.gmail.com" target="_blank">Send email</a>
+        <br>
+        <a href="tel:+254705375277">Call us</a>
       </div>
     </body>
 </html>
