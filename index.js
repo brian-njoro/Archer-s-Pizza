@@ -68,7 +68,16 @@ baconCheckbox.addEventListener(`click`,function() {
     console.log(`total price:`, pizzaTotal)
 })
 
-//
+//pepperoni
+const pepperoniCheckbox = document.getElementById(`pepperoniCb`)
+const pepperoniPrice = 100
+pepperoniCheckbox.addEventListener(`click`,function() {
+    if (pepperoniCheckbox.checked) {
+        //checkbox is checked, add pepperoni topping Price to Total price
+        pizzaTotal += pepperoniPrice
+    }
+    console.log(`total price:`, pizzaTotal)
+})
 
 //get number of pizzas ordered by user
 function getValue() {
