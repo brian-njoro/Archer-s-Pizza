@@ -45,3 +45,15 @@ h1 {
  img {
  margin-left: 501px;
  }
+
+ #buttonText {
+  color: black;
+ }
+
+ #specifics {
+  color: chartreuse;
+ }
+
+ #generateBill {
+  color:darkslategrey
+ }

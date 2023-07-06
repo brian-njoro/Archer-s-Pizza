@@ -143,29 +143,38 @@
           </h6>
         </div>
         <div class="amount">
-          <h3>Number of pizzas.<input type="number" id="quantity" name="quantity" min="1" max="30"></h3>
+          <h4>Enter Number of pizzas you wish to order.<input type="number" id="quantity" name="quantity" min="1" max="30"><button onclick="getValue()">Enter</button></h4>
         </div>
+        <button type="submit" id="placeOrder"><h6 id="buttonText">place your order</h6></button>
       </div>
-
+      <br>
       <div id="services">
-        <p>Please select how you would like to receive your orde</p>
+        <h5 id="specifics">Please select how you would like to receive your order</h5>
         <h6>
           pickup from store <input type="checkbox">
-          door delivery <input type="checkbox">
+          <br>
+          door delivery (Invokes a service charge of Kshs 150)<input type="checkbox">
         </h6>
-        <p>Should you wish for your order door delivered, kindly fill in the required details below</p>
+        <button type="submit" id="billing"><h6 id="generateBill">Generate Bill</h6></button>
+        <br><br>
+        <h4>Should you wish for your order door delivered, kindly fill in the required details below</h4>
         <div class="form">
           <form action="index.js" name="form" id="form"></form>
-          <label for="name"><h6>Enter your first name</h6></label>
+          <label for="name"><h6>First name</h6></label>
           <input type="text" id="firstname" placeholder="first name">
-          <label for="name"><h6>Enter your last name</h6></label>
+          <br>
+          <label for="name"><h6>Last name</h6></label>
           <input type="text" id="lastname" placeholder="last name">
-          <label for="email"><h6>Enter your email</h6></label>
+          <br>
+          <label for="email"><h6>email address</h6></label>
           <input type="email" id="email" placeholder="email address">
-          <label for="number"><h6>Enter your phone number</h6></label>
+          <br>
+          <label for="number"><h6>Phone number</h6></label>
           <input type="number" id="number" placeholder="number">
-          <label for="address"><h6>Enter your address</h6></label>
+          <br>
+          <label for="address"><h6>Home address</h6></label>
           <input type="text" id="address" placeholder="home address">
+          <br>
           <button type="submit" id="submit">Submit</button>
         </div>
       </div>
@@ -185,7 +194,6 @@
         <br>
         <a href="tel:+254705375277">Call us</a>
       </div>
-     
       <img src="images/pizza2.png" alt="logo" >
       <script src="index.js"></script> 
     </body>
