@@ -130,15 +130,15 @@
           </div>
         </div>
         <div class="extraToppings">
-          <h3 id="toppingsHeading">Select preferred extra pizza Toppings (OPTIONAL)</h3>
+          <h3 id="toppingsHeading">Select preferred extra pizza Toppings @Kshs 60 (OPTIONAL)</h3>
           <h6>
             <ol>
-              <li>bacon @ Kshs 70 <input type="checkbox" id="baconCb"> </li>
-              <li>Pepperoni @ Kshs 80 <input type="checkbox" id="pepperoniCb"></li>
-              <li>Sausage @ Kshs 60 <input type="checkbox" id="sausage"></li>
-              <li>Black olives @ Kshs 40<input type="checkbox" id="olivesCb"></li>
-              <li>Bell peppers @ Kshs 40<input type="checkbox" id="bellPeppersCb"></li>
-              <li>Extra Cheese @ Kshs 80<input type="checkbox" id="cheeseCb"></li>
+              <li>bacon <input type="checkbox" id="baconCb"> </li>
+              <li>Pepperoni <input type="checkbox" id="pepperoniCb"></li>
+              <li>Sausage <input type="checkbox" id="sausage"></li>
+              <li>Black olives<input type="checkbox" id="olivesCb"></li>
+              <li>Bell peppers<input type="checkbox" id="bellPeppersCb"></li>
+              <li>Extra Cheese<input type="checkbox" id="cheeseCb"></li>
             </ol>
           </h6>
         </div>
@@ -161,13 +161,22 @@
           <label for="name"><h6>Enter your last name</h6></label>
           <input type="text" id="lastname" placeholder="last name">
           <label for="email"><h6>Enter your email</h6></label>
-          <input type="email" id="email" placeholder="email">
+          <input type="email" id="email" placeholder="email address">
           <label for="number"><h6>Enter your phone number</h6></label>
           <input type="number" id="number" placeholder="number">
           <label for="address"><h6>Enter your address</h6></label>
-          <input type="text" id="address" placeholder="address">
+          <input type="text" id="address" placeholder="home address">
           <button type="submit" id="submit">Submit</button>
         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div id="review">
+        <h6>Should you have any complaints or comments, please be sure to leve a detailed review to help us serve you better. 
+          You can also rate our services and expound on any improvement you would like to see in future  <form action="/submit" method="POST"><input type="text" name="reviews" id="reviews" style="width: 300px; height: 150px;"></form>
+        </h6>
+        <button type="submit" id="submit">Submit review</button>
       </div>
       <br>
       <div id="contact">
@@ -176,16 +185,8 @@
         <br>
         <a href="tel:+254705375277">Call us</a>
       </div>
-      <br>
-      <br>
-      <br>
-      <div id="review">
-        <h6>should you have any complaints or comments, please be sure to leve a detailed review to help us serve you better. 
-          You can also rate our services and expound on any improvement you would like to see in future <input type="text" name="reviews" id="reviews" style="width: 300px; height: 150px;">
-        </h6>
-        <button type="submit" id="submit">Submit review</button>
-      </div>
-      
-      <script src="index.js"></script>
+     
+      <img src="images/pizza2.png" alt="logo" >
+      <script src="index.js"></script> 
     </body>
 </html>
