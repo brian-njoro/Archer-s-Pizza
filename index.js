@@ -32,3 +32,26 @@ largeCheckbox.addEventListener(`click`,function() {
     }
     console.log(`total price:`, pizzaTotal)
 })
+
+//Price if deluxe pizza selected
+let deluxeCheckbox = document.getElementById(`cbDeluxe`)
+let deluxePrice = 1200
+deluxeCheckbox.addEventListener(`click`,function() {
+    if (deluxeCheckbox.checked) {
+        //checkbox is checked, add deluxe pizza Price to Total price
+        pizzaTotal += deluxePrice
+    }
+    console.log(`total price:`, pizzaTotal)
+})
+
+//Additional price for thick crust
+//Price if large pizza selected
+let thickCheckbox = document.getElementById(`cbThick`)
+let thickPrice = 100
+thickCheckbox.addEventListener(`click`,function() {
+    if (thickCheckbox.checked) {
+        //checkbox is checked, add thick crust Price to Total price
+        pizzaTotal += thickPrice
+    }
+    console.log(`total price:`, pizzaTotal)
+})
