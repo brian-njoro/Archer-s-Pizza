@@ -160,23 +160,25 @@
         <br><br>
         <h4>Should you wish for your order door delivered, kindly fill in the required details below</h4>
         <div class="form">
-          <form action="index.js" name="form" id="form"></form>
-          <label for="name"><h6>First name</h6></label>
-          <input type="text" id="firstname" placeholder="first name">
-          <br>
-          <label for="name"><h6>Last name</h6></label>
-          <input type="text" id="lastname" placeholder="last name">
-          <br>
-          <label for="email"><h6>email address</h6></label>
-          <input type="email" id="email" placeholder="email address">
-          <br>
-          <label for="number"><h6>Phone number</h6></label>
-          <input type="number" id="number" placeholder="number">
-          <br>
-          <label for="address"><h6>Home address</h6></label>
-          <input type="text" id="address" placeholder="home address">
-          <br>
-          <button type="submit" id="submitInfo">Submit</button>
+          <form action="index.js" name="form" id="form"> 
+            <label for="name"><h6>First name</h6></label>
+            <input class="userDetails" type="text" id="firstname" placeholder="first name">
+            <br>
+            <label for="name"><h6>Last name</h6></label>
+            <input class="userDetails" type="text" id="lastname" placeholder="last name">
+            <br>
+            <label for="email"><h6>email address</h6></label>
+            <input class="userDetails" type="email" id="email" placeholder="email address">
+            <br>
+            <label for="number"><h6>Phone number</h6></label>
+            <input class="userDetails" type="number" id="number" placeholder="number">
+            <br>
+            <label for="address"><h6>Home address</h6></label>
+            <input class="userDetails" type="text" id="address" placeholder="home address">
+            <br>
+            <button type="submit" id="submitInfo">Submit</button>
+         </form>
+         
         </div>
       </div>
       <br>
@@ -184,9 +186,9 @@
       <br>
       <div id="review">
         <h6>Should you have any complaints or comments, please be sure to leve a detailed review to help us serve you better. 
-          You can also rate our services and expound on any improvement you would like to see in future  <form action="/submit" method="POST"><input type="text" name="reviews" id="reviews" style="width: 300px; height: 150px;"></form>
+          You can also rate our services and expound on any improvement you would like to see in future  <form id="comments" action="/submit" method="POST"><input type="text" name="reviews" id="userReviews" style="width: 300px; height: 150px;"></form>
         </h6>
-        <button type="submit" id="submit">Submit review</button>
+        <button type="submit" id="submitReview">Submit review</button>
       </div>
       <br>
       <div id="contact">
