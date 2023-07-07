@@ -162,4 +162,19 @@ bill.addEventListener(`click`, function() {
     alert(`Your total bill is Kshs: ${payableAmount}` )
 })
 
+//submit review form
+const form = document.getElementById("comments");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+  
+  // Retrieve the input value
+  const comments = document.getElementById("userReviews");
+  const inputValues = comments.value;
+
+  // Perform any desired logic or actions with the input value
+  console.log("Submitted input:", inputValues);
+});
+
+
 
