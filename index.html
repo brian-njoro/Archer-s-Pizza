@@ -137,15 +137,16 @@
               <li>Pepperoni  @ Kshs 100 <input type="checkbox" id="pepperoniCb"></li>
               <li>Sausage @ Kshs 60<input type="checkbox" id="sausage"></li>
               <li>Black olives @ kshs 80<input type="checkbox" id="olivesCb"></li>
-              <li>Bell peppers @ Kshs 50<input type="checkbox" id="PeppersCb"></li>
+              <li>Bell peppers @ Kshs 50<input type="checkbox" id="peppersCb"></li>
               <li>Extra Cheese @ Kshs 70<input type="checkbox" id="cheeseCb"></li>
             </ol>
           </h6>
         </div>
         <div class="amount">
-          <h4>Enter Number of pizzas you wish to order.<input type="number" id="quantity" name="quantity" min="1" max="30"><button onclick="getValue()">Enter</button></h4>
+          <h4>Enter Number of pizzas you wish to order.<input type="number" id="userNumber" placeholder="Enter amount">
+            <button onclick="processNumber()">Submit</button></h4>
         </div>
-        <button type="submit" id="placeOrder"><h6 id="buttonText">place your order</h6></button>
+        <button type="button" id="placeOrder"><h6 id="buttonText">place your order</h6></button>
       </div>
       <br>
       <div id="services">
@@ -153,9 +154,9 @@
         <h6>
           pickup from store <input type="checkbox">
           <br>
-          door delivery (Invokes a service charge of Kshs 150)<input type="checkbox">
+          door delivery (Invokes a service charge of Kshs 100 per pizza)<input type="checkbox" id="deliveryCb">
         </h6>
-        <button type="submit" id="billing"><h6 id="generateBill">Generate Bill</h6></button>
+        <button type="button" id="billing"><h6 id="generateBill">Generate Bill</h6></button>
         <br><br>
         <h4>Should you wish for your order door delivered, kindly fill in the required details below</h4>
         <div class="form">
@@ -175,7 +176,7 @@
           <label for="address"><h6>Home address</h6></label>
           <input type="text" id="address" placeholder="home address">
           <br>
-          <button type="submit" id="submit">Submit</button>
+          <button type="submit" id="submitInfo">Submit</button>
         </div>
       </div>
       <br>

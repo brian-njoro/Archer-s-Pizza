@@ -56,7 +56,6 @@ thickCheckbox.addEventListener(`click`,function() {
 })
 
 //Add prices for extra toppings
-
 //bacon
 const baconCheckbox = document.getElementById(`baconCb`)
 const baconPrice = 90
@@ -93,7 +92,7 @@ sausageCheckbox.addEventListener(`click`,function() {
 //black olives
 const olivesCheckbox = document.getElementById(`olivesCb`)
 const olivesPrice = 80
-pepperoniCheckbox.addEventListener(`click`,function() {
+olivesCheckbox.addEventListener(`click`,function() {
     if (olivesCheckbox.checked) {
         //checkbox is checked, add black olives topping Price to Total price
         pizzaTotal += olivesPrice
@@ -103,24 +102,64 @@ pepperoniCheckbox.addEventListener(`click`,function() {
 
 //bell peppers
 const peppersCheckbox = document.getElementById(`peppersCb`)
-const peppersPrice = 50
+const pepperPrice = 50
 peppersCheckbox.addEventListener(`click`,function() {
     if (peppersCheckbox.checked) {
         //checkbox is checked, add bell peppers topping Price to Total price
-        pizzaTotal += peppersPrice
+        pizzaTotal += pepperPrice
     }
     console.log(`total price:`, pizzaTotal)
 })
 
+//cheese
+const cheeseCheckbox = document.getElementById(`cheeseCb`)
+const cheesePrice = 70
+cheeseCheckbox.addEventListener(`click`,function() {
+    if (cheeseCheckbox.checked) {
+        //checkbox is checked, add extra cheese topping Price to Total price
+        pizzaTotal += cheesePrice
+    }
+    return pizzaTotal
+})
+
 //get number of pizzas ordered by user
-function getValue() {
-    const input = document.getElementById("quantity");
-    const pizzaTally = input.value;
-    console.log(pizzaTally);
+let pizzaTally
+function processNumber() {
+   const tally = document.getElementById("userNumber").value
+   pizzaTally = parseInt(tally) 
+
+    
+    console.log("pizza Amount:", pizzaTally)
 }
 
 //place order button
 const placeOrder = document.getElementById(`placeOrder`)
-placeOrder.addEventListener(`click`, function() {
+placeOrder.addEventListener(`click`,function() {
     alert(`Your order has successfully been placed`)
 })
+
+
+//charge for delivery
+let deliveryFee
+const deliveryCheckbox = document.getElementById(`deliveryCb`)
+deliveryFee = 100
+deliveryCheckbox.addEventListener(`click`,function addDelivery() {
+    if (deliveryCheckbox.checked) {
+        //checkbox is checked, add delivery fee to Total price
+        pizzaTotal += deliveryFee
+    } else {
+        pizzaTotal += 0
+    }
+    console.log(`total price:`, pizzaTotal)
+})
+
+
+
+const payableAmount = pizzaTotal*pizzaTally
+
+const bill = document.getElementById(`billing`)
+bill.addEventListener(`click`, function() {
+    alert(`Your total bill is Kshs: ${payableAmount}` )
+})
+
+
